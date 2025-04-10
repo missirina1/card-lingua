@@ -1,38 +1,54 @@
-# React Project for the React Course
+# 🧠 Card Lingua — Изучай английский с удовольствием
 
-## Available Scripts
+Интерактивное веб-приложение на React для запоминания английских слов с помощью карточек.  
+Создавайте собственные модули по темам, добавляйте слова и практикуйтесь каждый день!
 
-In the project directory, you can run:
+## 🚀 Возможности
 
-### `npm start`
+- 📁 Создание модулей с карточками по темам (например, "Фрукты", "Глаголы", "Одежда")
+- 🧩 Добавление карточек с переводами и примерами
+- 🔁 Режим тренировки: случайные карточки, скрытие перевода, повторение
+- 🧠 Автоматическое запоминание и повторение сложных слов
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Технологии
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React  
+- JavaScript  
+- CSS Modules / SCSS  
+- React Router
 
-### `npm test`
+## 🧑‍💻 Установка и запуск
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/missirina1/card-lingua.git
+cd card-lingua
+```
 
-### `npm run build`
+2. Установите зависимости:
+   ```
+   npm install
+   ```
+3. Запустите проект:
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧩 Пример использования
+Создайте модуль: "Животные"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Добавьте карточки:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🐶 dog — собака
+🐱 cat — кошка
 
-### `npm run eject`
+Перейдите в "Режим тренировки" и начните запоминать!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔮 Идеи для развития
+Авторизация и личные модули
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Уровень сложности карточек
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Импорт/экспорт модулей
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Интеграция с OpenAI для генерации примеров
