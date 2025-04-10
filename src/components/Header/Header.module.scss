@@ -1,0 +1,45 @@
+@use '/src/styles/helpers/' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--gradient);
+  color: var(--color-dark-10);
+  width: 100%;
+  padding: rem(5) rem(30);
+  font-family: 'OpenSans-Bold';
+  position: fixed;
+  z-index: 100;
+
+  &__logo {
+    margin-right: rem(15);
+    max-width: fluid(60, 50);
+  }
+
+  &__menu {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+
+    a {
+      background: var(--color-light);
+      border: var(--border);
+      border-radius: rem(5);
+      padding: rem(3) rem(10);
+
+      @include fluid-text(16, 14);
+
+      &:hover {
+        background: var(--gradient);
+        color: var(--color-light);
+        transition: var(--transition-duration);
+      }
+    }
+  }
+}

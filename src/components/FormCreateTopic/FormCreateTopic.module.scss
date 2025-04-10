@@ -1,0 +1,69 @@
+@use '/src/styles/helpers/' as *;
+.topicForm {
+  padding: rem(100) 2rem rem(50) 2rem;
+  display: grid;
+  grid-template-rows: 15% 1fr;
+  gap: 0.5rem;
+  height: 100vh;
+  width: 100vw;
+
+  &__title {
+    grid-row: 1;
+    margin-bottom: 2rem;
+    font-family: OpenSans-Bold;
+
+    @include fluid-text(40, 20);
+  }
+
+  &__form {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 10% 10% 1fr;
+    gap: 1rem;
+    width: 100%;
+    background-color: #edeff4;
+    box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(rem(20));
+    border-radius: rem(10);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+
+    &_theme {
+      grid-row: 1;
+      font-family: OpenSans-Regular;
+      padding: 0.5rem;
+      border: none;
+
+      box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(rem(20));
+
+      @include fluid-text(18, 16);
+    }
+
+    &_description {
+      grid-row: 2;
+      font-family: OpenSans-Italic;
+      padding: 0.5rem;
+      border: none;
+      box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(rem(20));
+
+      @include fluid-text(16, 14);
+    }
+  }
+
+  &__addNewWord {
+    height: rem(40);
+    font-family: OpenSans-Regular;
+  }
+
+  &__btn {
+    width: auto;
+    height: rem(40);
+    justify-self: end;
+    display: flex;
+    margin-top: 0.5rem;
+    font-family: OpenSans-Bold;
+  }
+}

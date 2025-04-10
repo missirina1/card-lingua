@@ -1,0 +1,27 @@
+@use 'helpers' as *;
+:root {
+  --color-light: rgb(255, 255, 255, 0.95);
+
+  --color-dark-10: rgb(55, 56, 60);
+
+  --color-grey: #4d4d4d;
+  --color-dark-blue: rgb(38, 37, 67, 0.95);
+
+  --color-pinck: #b81685;
+  --color-violet: #a40eb1;
+  --color-red: #d82342;
+  --color-orange: rgb(251, 106, 39, 0.95);
+
+  --gradient: linear-gradient(
+    45deg,
+    var(--color-violet) 64%,
+    var(--color-red) 136%
+  );
+
+  --border: #{rem(1)} solid var(--color-dark-10);
+
+  --font-family-base: 'Inter', sans-serif;
+  --font-family-accent: 'Kumbh Sans', sans-serif;
+
+  --transition-duration: 0.2s;
+}

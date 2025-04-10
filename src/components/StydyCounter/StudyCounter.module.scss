@@ -1,0 +1,49 @@
+@use '/src/styles/helpers/' as *;
+
+.studyCounter {
+  display: flex;
+  flex-direction: column;
+  width: fluid(900, 500);
+  height: fluid(500, 400);
+  border-radius: rem(15);
+  background-color: var(--color-dark-blue);
+  color: var(--color-light);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: rem(5) rem(10) rem(15) var(--color-dark-blue);
+
+  &_title {
+    font-family: 'OpenSans-Regular';
+    letter-spacing: rem(0.5);
+    @include fluid-text(30, 26);
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+    margin-block: 3rem;
+
+    &_know {
+      font-family: 'OpenSans-Light';
+      font-weight: lighter;
+      letter-spacing: rem(0.8);
+
+      @include fluid-text(26, 20);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    &_btn {
+      width: rem(220);
+      height: rem(40);
+    }
+  }
+}

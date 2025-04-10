@@ -1,0 +1,18 @@
+@use '/src/styles/helpers/' as *;
+
+.slide {
+  margin: rem(100) 2rem rem(50) 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__btn {
+    width: rem(100);
+    height: rem(40);
+  }
+}
+.ident {
+  margin-top: rem(100);
+}

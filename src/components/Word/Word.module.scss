@@ -1,0 +1,104 @@
+@use '/src/styles/helpers/' as *;
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 10%;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: var(--border);
+  padding: rem(10);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    @include fluid-text(16, 14);
+
+    &_word {
+      margin: 0;
+      font-family: 'OpenSans-Bold';
+    }
+
+    &_translate {
+      font-family: 'OpenSans-Italic';
+    }
+  }
+
+  &__change {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+    justify-items: center;
+    cursor: pointer;
+
+    &_edit {
+      width: rem(30);
+      height: rem(30);
+      padding: rem(5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: rem(5);
+      color: white;
+      background-color: var(--color-dark-blue);
+
+      &:hover {
+        transform: scale(1.1);
+        transition: var(--transition-duration);
+      }
+    }
+
+    &_delete {
+      width: rem(30);
+      height: rem(30);
+      padding: rem(5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: rem(5);
+      color: white;
+      background-color: var(--color-red);
+
+      &:hover {
+        transform: scale(1.1);
+        transition: var(--transition-duration);
+      }
+    }
+  }
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); // Затемнение
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: rem(40);
+  border-radius: rem(10);
+  width: rem(350);
+  box-shadow: 0 rem(4) rem(10) rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modalClose {
+  position: absolute;
+  top: rem(10);
+  right: rem(10);
+  background: none;
+  border: none;
+  font-size: rem(18);
+  cursor: pointer;
+}

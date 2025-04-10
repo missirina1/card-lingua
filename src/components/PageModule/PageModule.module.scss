@@ -1,0 +1,54 @@
+@use '/src/styles/helpers/' as *;
+
+.pageModule {
+  padding: rem(100) 2rem rem(100) 2rem;
+  display: grid;
+  grid-template-rows: 15% 1fr 20%;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    grid-row: 1;
+    border-bottom: var(--border);
+    width: 100%;
+
+    &_title {
+      font-family: OpenSans-Bold;
+
+      @include fluid-text(35, 20);
+    }
+
+    &_groupBtn {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    &_btn {
+      width: auto;
+      height: rem(40);
+
+      font-family: OpenSans-Light;
+      @include fluid-text(20, 16);
+    }
+  }
+
+  &__cards {
+    grid-row: 2;
+    margin: 0;
+  }
+
+  &__description {
+    grid-row: 3;
+    font-family: OpenSans-Regular;
+    width: 100%;
+
+    @include fluid-text(20, 16);
+  }
+}

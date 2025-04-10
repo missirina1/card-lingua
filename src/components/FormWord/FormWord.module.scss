@@ -1,0 +1,42 @@
+@use '/src/styles/helpers/' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  width: rem(300);
+  height: rem(400);
+  background-color: var(--color-loght);
+  border-radius: rem(10);
+  border: var(--border);
+  background: var(--color-dark-blue);
+  font-family: 'OpenSans-Regular';
+
+  &__title {
+    font-family: 'OpenSans-Light';
+    margin-bottom: 1rem;
+    color: var(--color-light);
+
+    @include fluid-text(25, 20);
+  }
+
+  &__word,
+  &__translate {
+    width: rem(200);
+    height: rem(30);
+    padding: 0.5rem;
+    border-radius: rem(10);
+    border: var(--border);
+    color: var(--color-dark-10);
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 1rem;
+    font-size: rem(15);
+  }
+}

@@ -1,0 +1,28 @@
+@use '/src/styles/helpers/' as *;
+
+.topics {
+  padding: 0.6rem;
+  margin: 0.8rem;
+  width: calc(100% - 32px);
+  height: rem(70);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: var(--color-light);
+  backdrop-filter: blur(rem(20));
+  box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
+
+  &__quentity {
+    font-family: OpenSans-Light;
+  }
+
+  &__title {
+    font-family: OpenSans-Regular;
+    @include fluid-text(22, 20);
+  }
+
+  &:hover {
+    border-bottom: solid rem(3) var(--color-orange);
+    cursor: pointer;
+  }
+}

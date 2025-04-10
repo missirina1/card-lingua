@@ -1,0 +1,34 @@
+@use '/src/styles/helpers/' as *;
+
+.btnOrange {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-orange);
+  backdrop-filter: blur(rem(10));
+  color: var(--color-light);
+  border: none;
+  border-radius: rem(10);
+  padding: rem(12);
+  white-space: nowrap;
+  align-items: center;
+  width: auto;
+  font-family: 'OpenSans-Bold';
+  box-shadow: 0 rem(8) rem(32) rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    color: var(--color-light);
+    background-color: transparent;
+    background: var(--gradient);
+
+    transition: var(--transition-duration);
+  }
+}
+
+.disabled {
+  background-color: rgb(131, 129, 129);
+  cursor: not-allowed;
+
+  &:hover {
+    background: rgb(131, 129, 129);
+  }
+}

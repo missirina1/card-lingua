@@ -1,0 +1,56 @@
+@use '/src/styles/helpers/' as *;
+
+.preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  justify-items: end;
+  margin: rem(40) rem(140) 0 rem(140);
+  padding: rem(90) 0 0 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.9rem;
+    align-items: start;
+
+    &_title {
+      color: var(--color-dark-10);
+      font-family: 'OpenSans-Bold';
+      line-height: 1.2;
+
+      @include fluid-text(54, 44);
+    }
+
+    &_text {
+      border-left: var(--border);
+      padding-left: 0.5rem;
+      font-family: 'OpenSans-Regular';
+
+      @include fluid-text(22, 20);
+    }
+  }
+
+  &__groupBtn {
+    display: flex;
+    column-gap: rem(18);
+    margin-top: 1rem;
+
+    &_btn {
+      display: flex;
+      max-width: fluid(300, 250);
+      height: rem(46);
+      font-size: rem(16);
+    }
+  }
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: rem(500);
+    height: auto;
+  }
+}

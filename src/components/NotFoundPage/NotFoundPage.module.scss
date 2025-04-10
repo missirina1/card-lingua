@@ -1,0 +1,14 @@
+@use '/src/styles/helpers/' as *;
+.page {
+  height: calc(100vh - 100px - 40px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-family: OpenSans-Bold;
+
+    @include fluid-text(40, 20);
+  }
+}
